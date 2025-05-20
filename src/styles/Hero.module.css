@@ -1,0 +1,166 @@
+.hero {
+  display: flex;
+  flex-direction: row;
+  height: calc(100vh - 70px);
+  width: auto;
+}
+
+.nameCardContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100%;
+  margin: 0;
+}
+
+@media (min-width: 482px) {
+  
+  /* tablet */
+  .nameCardContainer {
+    width: 60vw;
+    justify-content: flex-end;
+    margin: 0 1em 0 2em;
+  }
+}
+
+@media (min-width: 780px) {
+  
+  /* desktop */
+  .nameCardContainer {
+    width: 40vw;
+  }
+}
+
+.hero-logo img {
+  width: 75px;
+  height: 75px;
+  margin: 0 0 1.5em 0;
+}
+
+@media (min-width: 780px) {
+
+  /* desktop */
+  .hero-logo img {
+    width: 100px;
+    height: 100px;
+    margin: 0 0 1.5em 0;
+  }
+}
+
+.nameCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  margin: 0 0 0 0;
+}
+
+@media (min-width: 482px) {
+
+  /* tablet */
+  .nameCard {
+    margin: 0 0 2.5em 0;
+  }
+}
+
+.nameCard h1 {
+  text-align: center;
+  font-size: 2.5em;
+}
+
+@media (min-width: 780px) {
+
+  /* desktop */
+  .nameCard h1 {
+    font-size: 3em;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  /* XL desktop */
+  .nameCard h1 {
+    font-size: 3.5em;
+  }
+}
+
+.separator {
+  display: block;
+  width: 18em;
+  height: 5px;
+  margin: 0.5em 0;
+  border-radius: 2px;
+}
+
+@media (min-width: 780px) {
+
+  /* desktop */
+  .separator {
+    width: 20em;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  /* XL desktop */
+  .separator {
+    width: 24em;
+  }
+}
+
+.nameCard h2 {
+  text-align: center;
+  font-size: 1.75em;
+  font-weight: normal;
+}
+
+@media (min-width: 780px) {
+  
+  /* desktop */
+  .nameCard h2 {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 1200px) {
+  
+  /* XL desktop */
+  .nameCard h2 {
+    font-size: 2.5em;
+  }
+}
+
+.nameCard .path {
+  fill: var(--dark-pink);
+}
+
+.fillerBlock {
+  display: none;
+}
+
+@media (min-width: 482px) {
+
+  /* tablet */
+  .fillerBlock {
+    display: block;
+    width: 40vw;
+    height: calc(100% - 4em);
+    margin: 2em 0;
+    padding: 0 2em 0 0;
+  }
+}
+
+@media (min-width: 780px) {
+
+  /* desktop */
+  .fillerBlock {
+    width: 60vw;
+  }
+}
+
+.fillerBlock .path {
+  fill: var(--light-pink);
+}
