@@ -15,26 +15,3 @@
   display: flex;
   flex-direction: column;
 }
-
-.section1 {
-  display: flex;
-  flex-direction: row;
-  height: calc(100vh - 70px);
-  width: auto;
-}
-
-.nameCardContainer {
-  width: 40vw;
-  height: 100%;
-}
-
-.fillerBlock {
-  width: 60vw;
-  height: calc(100% - 4em);
-  margin: 2em 0;
-  padding: 0 2em 0 0;
-}
-
-.path {
-  fill: var(--light-pink);
-}

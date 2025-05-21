@@ -1,0 +1,103 @@
+.skills-page {
+  display: flex;
+  flex-direction: row;
+  height: calc(100vh);
+  width: auto;
+}
+
+.fillerBlock {
+  display: none;
+}
+
+@media (min-width: 482px) {
+
+  /* tablet */
+  .fillerBlock {
+    display: block;
+    width: 40vw;
+    height: calc(100% - 4em);
+    margin: 2em 2em 2em 2em;
+    border-radius: 5px;
+    background-color: var(--light-pink);
+  }
+}
+
+@media (min-width: 780px) {
+
+  /* desktop */
+  .fillerBlock {
+    width: 60vw;
+  }
+}
+
+.skillsContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2em;
+  width: 100vw;
+  height: 100%;
+  margin: 0;
+}
+
+@media (min-width: 482px) {
+  
+  /* tablet */
+  .skillsContent {
+    width: 60vw;
+  }
+}
+
+@media (min-width: 780px) {
+  
+  /* desktop */
+  .skillsContent {
+    width: 40vw;
+  }
+}
+
+.skillsContent-subsection {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.subsection-title {
+  width: 100%;
+  padding-left: 0.25em;
+  margin: 0 0 0.5em 0;
+  font-size: 2em;
+  font-weight: normal;
+}
+
+.skills-page {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  width: 100%;
+  height: fit-content;
+}
+
+.skillBubble {
+  width: fit-content;
+  padding: 0.5em;
+  font-size: 1.15em;
+  font-weight: bold;
+  background-color: var(--pink);
+  border-radius: 15px;
+}
+
+.skillBubble:hover {
+  cursor: pointer;
+  color: var(--background);
+  background-color: var(--dark-pink);
+}
