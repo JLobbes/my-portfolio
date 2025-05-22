@@ -1,3 +1,5 @@
+/* src/styles/Skills.module.css */
+
 .skills-page {
   display: flex;
   flex-direction: row;
@@ -70,6 +72,7 @@
   margin: 0 0 0.5em 0;
   font-size: 2em;
   font-weight: normal;
+  user-select: none;
 }
 
 .skills-page {
@@ -95,6 +98,7 @@
   background-color: var(--pink);
   border-radius: 15px;
   transition: width 0.5s ease, opacity 0.3s ease;
+  user-select: none;
 }
 
 .skillBubble:hover {
