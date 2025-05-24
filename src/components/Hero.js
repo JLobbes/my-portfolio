@@ -7,7 +7,7 @@ export default function Hero() {
     <div className={styles.hero}>
       <div className={styles.nameCardContainer}>
         <div className={styles['hero-logo']}>
-          <img src='/hero_logo.png' />
+          <img src='/images/hero_logo.png' />
         </div>
         <div className={styles.nameCard} >
           <h1>Jared Lobbestael</h1>
