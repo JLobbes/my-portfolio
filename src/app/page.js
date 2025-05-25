@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import Skills from "../components/Skills"
 import PastWorkPokedex from "@/components/PastWorkPokedex";
+import MidwayInterlude from "@/components/MidwayInterlude";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <Hero /> 
         <Skills />
         <PastWorkPokedex />
+        <MidwayInterlude />
       </main>
     </div>
   );
