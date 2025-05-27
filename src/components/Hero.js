@@ -24,21 +24,22 @@ export default function Hero() {
           <h2>Junior Web Developer</h2>
         </div>
       </div>
-      <svg viewBox="0 0 100 100" preserveAspectRatio="none" className={styles.fillerBlock}>
-        <path d="
-                M 15 2 
-                C 16 0 17 0 17 0
-                L 98 0 
-                C 99 0 100 1 100 2 
-                V 98 
-                C 100 99 99 100 98 100 
-                H 2 
-                C 1 100 0 99 0 97
-              "
-                
-              className={styles.path}
-        />
-      </svg>
+      
+      <div className={styles['filler-blocks-wrapper']}>        
+        <svg viewBox="0 0 90 300" preserveAspectRatio="none" className={styles['fillerBlock-triangle']}>
+          <path d="
+                  M 47 4 
+                  C 48 0 50 0 52 0 
+                  L 90 0 V 300 H 4 
+                  C 3 300 0 299 1 296
+                "
+                className={styles.path}
+          />
+        </svg>
+
+        <div className={styles['fillerBlock-rectangle']}></div>
+      </div>
+      
     </div>
   );
 }

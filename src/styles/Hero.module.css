@@ -1,8 +1,9 @@
 .hero {
   display: flex;
   flex-direction: row;
-  height: calc(100vh - 70px);
+  height: calc(100vh - 70px - 4em);
   width: auto;
+  margin: 2em 2em 2em 2em;
 }
 
 .nameCardContainer {
@@ -12,7 +13,6 @@
   align-items: center;
   width: 100vw;
   height: 100%;
-  margin: 0;
 }
 
 @media (min-width: 482px) {
@@ -21,7 +21,7 @@
   .nameCardContainer {
     width: 60vw;
     justify-content: flex-end;
-    margin: 0 1em 0 2em;
+    /* margin: 0 1em 0 2em; */
   }
 }
 
@@ -137,30 +137,36 @@
   fill: var(--dark-pink);
 }
 
-.fillerBlock {
+.filler-blocks-wrapper {
   display: none;
 }
 
 @media (min-width: 482px) {
 
-  /* tablet */
-  .fillerBlock {
-    display: block;
-    width: 40vw;
-    height: calc(100% - 4em);
-    margin: 2em 0;
-    padding: 0 2em 0 0;
-  }
-}
-
-@media (min-width: 780px) {
-
-  /* desktop */
-  .fillerBlock {
+  /* tablet & desktop */
+  .filler-blocks-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
     width: 60vw;
   }
 }
 
-.fillerBlock .path {
+.fillerBlock-rectangle {
+  height: 100%;
+  flex-grow: 1;
+  border-radius: 5px;
+  background-color: var(--light-pink);
+}
+
+.fillerBlock-triangle {
+  height: 100%;
+  width: auto;
+  transform: translate(0.25em, 0);
+}
+
+.fillerBlock-triangle .path {
   fill: var(--light-pink);
 }
